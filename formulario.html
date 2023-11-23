@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico 08</title>
+    <style>
+        body {
+            background-image: url(asset/img/FONDORIVER.jpg);
+
+        }
+
+        main {
+            width: 850px;
+            margin: 0 auto;
+        }
+
+        label {
+            color: white;
+        }
+
+        .form-datos {
+            display: flex;
+            flex-direction: column;
+            height: 70px;
+        }
+
+        input {
+            background-color: red;
+            height: 30px;
+            border: 1px solid wheat;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        label {
+            font-size: 1.4em;
+        }
+
+        .color-letra {
+            background-color: red;
+            height: 30px;
+            border: 1px solid wheat;
+            color: white;
+            font-size: 1em;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            color: white;
+        }
+
+        .escudo {
+            width: 150px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .boton {
+            height: 50px;
+        }
+        footer{
+            display: flex;
+            justify-content: end;
+            color: white;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="asset/img/LogoRiver.png" alt="">
+        <img class="escudo" src="asset/img/ESCUDORIVER.png" alt="">
+    </header>
+    <main>
+        <h2>Registrate en River</h2>
+        <form action="/destino" method="post">
+            <div class="form-datos">
+
+                <label for="Documento"> Documento </label>
+                <input type="text" name="Documento" id="Documento">
+            </div>
+
+            <div class="form-datos">
+
+                <label for="Nacionalidad">Nacionalidad</label>
+                <select class="color-letra" name="Nacionalidad" id="Nacionalidad">
+                    <option value="">Elegir Nacionalidad</option>
+                    <option value="ar">Argentina</option>
+                    <option value="br">Brasil</option>
+                    <option value="ch">Chile</option>
+                    <option value="pr">Peru</option>
+                    <option value="ur">Uruguay</option>
+                </select>
+            </div>
+            <div class="form-datos">
+
+                <label for="Sexo">Sexo</label>
+                <select class="color-letra" name="Sexo" id="Sexo">
+                    <option value="">Selecciona tu sexo</option>
+                    <option value="ma">Masculino</option>
+                    <option value="fe">Femenino</option>
+                    <option value="pr">Prefiero no decirlo</option>
+                </select>
+            </div>
+            <div class="form-datos">
+
+                <label for="Tipo de Documento">Tipo de Documento</label>
+                <select class="color-letra" name="Tipo de Documento" id="Tipo de Documento">
+                    <option value="">Tipo de Documento</option>
+                    <option value="ho">Tengo DNI argentino</option>
+                    <option value="mu">Tengo DNI extranjero</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="condiciones" id="condiciones">
+                <label class="terminos" for="He leido y acepto los términos y condiciones de usuario">He leido y acepto
+                    los términos y
+                    condiciones de usuario</label>
+            </div>
+            <div>
+                <input class="boton" type="submit" value="Continuar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>
+            Juan Cruz Soto 4º3<sup>ra</sup>
+        </h3>
+    </footer>
+</body>
+
+</html>
